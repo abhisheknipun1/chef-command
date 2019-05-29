@@ -1,0 +1,6 @@
+#chef-client -z --runlist 'recipe[lamp_stack::test]'
+
+#chef-client -z --runlist 'recipe[lamp_stack::default]'
+
+## Inside recipes\default.rb
+ include_recipe "lamp_stack::test"
